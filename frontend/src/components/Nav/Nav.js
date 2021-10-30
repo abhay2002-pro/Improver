@@ -1,44 +1,83 @@
 import React,{useState} from 'react';
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import menu from './menu.jpg';
 import close from './close.jpeg';
 import {useRouteMatch} from 'react-router-dom';
 
-export default function Nav() {
-    const match=useRouteMatch();
-    const [Toggle,setToggle]=useState(false);
-    return (
-    
-        <nav id="navbar">
-          {/* {window.pageXOffset>450?setToggle(false):setToggle((prev)=>prev)} */}
-          <ul className="navlayout">
-            <li className={match.url=="/"?"current":""}>
-              <a className="links" href="/">
+function Nav() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  return (
+    <>
+      <nav className="Nav">
+        <div className="nav-container">
+
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
-
-            <li className={match.url=="/about"?"current":""}>
-              <a className="links" href="/about">
-                About
-              </a>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/paraphraser"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Paraphraser
+              </NavLink>
             </li>
-
-            <li className={match.url=="/grammer"?"current":""}>
-              <a className="links" href="/grammer">
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/Summariser"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Summariser
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/grammer"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 Grammer
-              </a>
+              </NavLink>
             </li>
-
-            <li className={match.url=="/paraphrase"?"current":""}>
-              <a className="links" href="/paraphrase">
-                Paraphrase
-              </a>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/aboutUs"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                About Us
+              </NavLink>
             </li>
           </ul>
-            <div id="toogle"><img src={Toggle?close:menu} onClick={()=>setToggle((prev)=>!prev)} style={{height:"48px",width:"48px"}}/></div>
-
-        </nav>
-        
-    )
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 }
+
+export default Nav;
