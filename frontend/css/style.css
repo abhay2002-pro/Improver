@@ -1,0 +1,88 @@
+body{
+  font-family: "Times New Roman", Times, serif;
+}
+.size {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+}
+.card {
+  background-color: transparent;
+  margin-left: 100px;
+  margin-top: 50px;
+  height: 200px;
+  width: 300px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  perspective: 1000px;
+  animation: henlo;
+  animation-iteration-count: initial;
+  animation-duration: 1s;
+}
+
+@keyframes henlo {
+  0% {
+    margin-left: 100px;
+    margin-top: 25px;
+  }
+  100% {
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}
+.card-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  transition: 0.7s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-info {
+  transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card-front {
+  background-color: #bbb;
+  color: black;
+}
+.card-back {
+  text-align: none;
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  height: 220px;
+  width: 300px;
+}
+.rows {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+    .rows{
+        display:contents;
+    }
+    .card{
+        margin-left: 50px;
+    }
+    @keyframes henlo {
+        0% {
+            margin-left: 50px;
+            margin-top: 25px;
+          }
+          100% {
+            margin-left: 50px;
+            margin-top: 50px;
+          }
+    }
+}
