@@ -5,10 +5,10 @@
 
 
 ## Table of Contents:
-**1. Description**
-**2. Demo Link**
-**3. Contributors**
-**4. How to use**
+**1. Link of the working site**
+**2. Pre - requisites to run the website**
+**3. How to Use**
+**4. Team Name and Members**
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -44,9 +44,7 @@
 # Team Name
 **Poker Faces**
 
------------------------------------------------------------------------------------------------------------------------
-
-## Contributors
+## Team Members
 1. Abhay Kumar Ray
 2. Aritro Ghosh
 3. Satyakiran Patnala
