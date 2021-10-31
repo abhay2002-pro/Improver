@@ -1,5 +1,5 @@
 # Improver
-**This is aN ENGLISH WEBSITE .**
+**This is an ENGLISH WEBSITE .**
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -37,6 +37,12 @@
 
 **Grammer : Paste the text to be checked in the text area. Click on "Check" button and wait for <10 secs then check the suggestions and errors.** 
 
+![ss1](https://github.com/abhay2002-pro/Improver/blob/main/screenshots/ss1.png)
+![ss2](https://github.com/abhay2002-pro/Improver/blob/main/screenshots/ss2.png)
+![ss3](https://github.com/abhay2002-pro/Improver/blob/main/screenshots/ss3.png)
+![ss4](https://github.com/abhay2002-pro/Improver/blob/main/screenshots/ss4.png)
+![ss5](https://github.com/abhay2002-pro/Improver/blob/main/screenshots/ss5.png)
+![ss6](https://github.com/abhay2002-pro/Improver/blob/main/screenshots/ss6.png)
 ----------------------------------------------------------------------------------------------------------------------------
 
 # Team Name
