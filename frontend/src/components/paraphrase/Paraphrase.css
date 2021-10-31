@@ -5,6 +5,7 @@
     Padding-top: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #paraheading img{
     display: inline-block;

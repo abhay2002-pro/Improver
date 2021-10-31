@@ -28,7 +28,7 @@ export default function Paraphrase() {
     await fetch("https://api.promptapi.com/paraphraser", requestOptions)
       .then(response => response.json())
       .then(result => setParatext(result.paraphrased))
-      .catch(error => console.log('error', error));
+      .catch(error => setParatext("Api limit may be over"));
   }
   function showcopy() {
     setShow(true);
@@ -38,7 +38,7 @@ export default function Paraphrase() {
   }
 
   return (
-    <div style={{backgroundColor:'white',minHeight:"100vh"}}>
+    <div style={{backgroundColor:'white',minHeight:"100vh",paddingBottom:"20px"}}>
       <div id="paraheading">
         <img src={logo} />
         <h1>Paraphraser</h1>
@@ -61,7 +61,7 @@ export default function Paraphrase() {
           <div>
             <CopyToClipboard text={Paratext}
             >
-              <button onClick={showcopy}><FontAwesomeIcon icon={faClone} />Copy</button>
+              <button onClick={showcopy} style={{padding:"5px 10px"}}><FontAwesomeIcon icon={faClone} /> Copy</button>
             </CopyToClipboard>
             {Show&&<span style={{color:"white",backgroundColor:"#111",borderRadius:"3px",padding:"3px",marginLeft:"3px"}}>Copied!!</span>}
 

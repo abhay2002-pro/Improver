@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import logo from './paraphrase.png';
+import logo from './grammer.png';
 import './Grammer.css';
 import axios from 'axios';
 
 export default function Grammer() {
   const [Test, setTest] = useState("");
-  const [Sugtext, setSugtext] = useState("");
+  const [Sugtext, setSugtext] = useState("No suggestions");
   var [err, seterr] = useState([]);
 
   async function checker() {
@@ -52,7 +52,7 @@ export default function Grammer() {
     seterr(result);
   }
   return (
-    <div style={{ backgroundColor: 'white', minHeight: "100vh" }}>
+    <div style={{ backgroundColor: 'white', minHeight: "100vh",paddingBottom:"20px" }}>
       <div id="gramaheading">
         <img src={logo} />
         <h1>Grammer</h1>
@@ -70,7 +70,7 @@ export default function Grammer() {
           <div>
             <div>Errors</div>
             <section>
-              {err.map((el) => {
+              {err.length==0?"No Errors":err.map((el) => {
                 let value = el.value;
                 console.log(el);
                 if (value == 0) {

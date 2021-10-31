@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from "./Summariser.png";
+import logo from "./summarize-icon-9.jpg";
 import "./Summariser.css";
-import axios from "axios";
+
 
 export default function Summariser() {
   const [Test, setTest] = useState("");
@@ -391,7 +391,7 @@ export default function Summariser() {
     setSugtext(temp);
   }
   return (
-    <div style={{ backgroundColor: "white", minHeight: "100vh" }}>
+    <div style={{ backgroundColor: "white", minHeight: "100vh",paddingBottom:"20px" }}>
       <div id="sumheading">
         <img src={logo} />
         <h1>Summariser</h1>

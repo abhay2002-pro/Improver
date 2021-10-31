@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Paraphrase from './components/paraphrase/Paraphrase';
 import Grammer from './components/Grammer/Grammer';
 import Summariser from './components/Summariser/Summariser';
@@ -29,7 +29,7 @@ function App() {
             <Grammer />
           </Route>
 
-          <Route exact path="/Summariser">
+          <Route exact path="/summariser">
           <Nav/>  
             <Summariser />
           </Route>
