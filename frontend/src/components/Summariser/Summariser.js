@@ -414,7 +414,7 @@ export default function Summariser() {
               onChange={(e) => setTest(e.target.value)}
             ></textarea>
 
-            <button onClick={() => checker(Test)}>Summariser</button>
+            <button onClick={() => checker(Test)}>Summarise</button>
           </div>
           <div>
             <div>Summarised text</div>
