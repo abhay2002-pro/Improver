@@ -21,7 +21,7 @@
 
 ------------------------------------------------------------------------------------------------------------------------
 ## Pre - requisites to run the website
-**1 : Laptop,tablet or mobile** 
+**1 : Laptop, tablet or mobile** 
 
 **2 : Internet**
 
