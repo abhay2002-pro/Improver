@@ -346,15 +346,14 @@ export default function Summariser() {
     var sents = text
       .replace(/\.+/g, ".|")
       .replace(/\?/g, "?|")
+      //eslint-disable-next-line
       .replace(/\!/g, "!|")
       .split("|");
     sents.pop();
-    var i = 0;
-
     //Index sentences in document
     sents.forEach(function (sentencz) {
       var wordz = sentencz.split(" ").filter(function (n) {
-        return n.indexOf(stoplist) == -1;
+        return n.indexOf(stoplist) === -1;
       });
       console.log(wordz)
       document.push({
@@ -362,7 +361,6 @@ export default function Summariser() {
         words: wordz,
         score: 0,
       });
-      i++;
     });
 
     //Assign word frequencies
@@ -402,9 +400,9 @@ export default function Summariser() {
     setSugtext(temp);
   }
   return (
-    <div style={{ backgroundColor: "white", minHeight: "100vh",paddingBottom:"20px" }}>
+    <div style={{ backgroundColor: "white", minHeight: "100vh", paddingBottom: "20px" }}>
       <div id="sumheading">
-        <img src={logo} />
+        <img src={logo} alt="" />
         <h1>Summariser</h1>
       </div>
       <div id="sumsolver">

@@ -6,45 +6,44 @@ import Summariser from './components/Summariser/Summariser';
 import Page404 from './components/Page404/Page404';
 import About from "./components/About/About";
 import Nav from './components/Nav/Nav';
-import {BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
 
   return (
     <>
-   
-     <Router>
-     <Switch>
+      <Router>
+        <Switch>
           <Route exact path="/">
-            <Nav/>  
+            <Nav />
             <Home />
-          </Route> 
+          </Route>
 
           <Route exact path="/paraphrase">
-          <Nav/>  
+            <Nav />
             <Paraphrase />
           </Route>
 
           <Route exact path="/grammer">
-          <Nav/>  
+            <Nav />
             <Grammer />
           </Route>
 
           <Route exact path="/summariser">
-          <Nav/>  
+            <Nav />
             <Summariser />
           </Route>
 
           <Route exact path="/aboutUs">
-          <Nav/>  
+            <Nav />
             <About />
           </Route>
 
-          
+
           <Route exact path="*">
             <Page404 />
           </Route>
         </Switch>
-     </Router>
+      </Router>
     </>
   );
 }

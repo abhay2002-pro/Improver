@@ -11,7 +11,7 @@ export default function Grammer() {
   async function checker() {
 
     const options = {
-      url: "http://localhost:4000/check",
+      url: "https://wer123.herokuapp.com/check",
       method: "POST",
       withCredentials: true,
       data: {
@@ -24,7 +24,7 @@ export default function Grammer() {
     console.log(err);
     var newdata = "";
     const err_pairs = new Map();
-    if (res.data.length != 0) {
+    if (res.data.length !== 0) {
       var pointer = 0;
       res.data.map(
         (ele, index) => {
@@ -34,6 +34,7 @@ export default function Grammer() {
           err_pairs.set(dummy2, 1);
           pointer = ele.index + ele.offset;
           newdata += `${index + 1}. ${ele.reason}\n`;
+          return null;
         }
       );
       var dummy3 = Test.slice(pointer, Test.length);
@@ -52,9 +53,9 @@ export default function Grammer() {
     seterr(result);
   }
   return (
-    <div style={{ backgroundColor: 'white', minHeight: "100vh",paddingBottom:"20px" }}>
+    <div style={{ backgroundColor: 'white', minHeight: "100vh", paddingBottom: "20px" }}>
       <div id="gramaheading">
-        <img src={logo} />
+        <img src={logo} alt="" />
         <h1>Grammer</h1>
       </div>
       <div id="gramasolver">
@@ -70,10 +71,10 @@ export default function Grammer() {
           <div>
             <div>Errors</div>
             <section>
-              {err.length==0?"No Errors":err.map((el) => {
+              {err.length === 0 ? "No Errors" : err.map((el) => {
                 let value = el.value;
                 console.log(el);
-                if (value == 0) {
+                if (value === 0) {
                   return (<span>{`${el.name}`}</span>);
                 }
                 else {

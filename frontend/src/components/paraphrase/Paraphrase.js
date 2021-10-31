@@ -9,10 +9,10 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 export default function Paraphrase() {
   const [Test, setTest] = useState("");
   const [Paratext, setParatext] = useState("");
-  const [Show,setShow]=useState(false);
+  const [Show, setShow] = useState(false);
   async function paraphraseConvert() {
     var myHeaders = new Headers();
-   
+
     myHeaders.append("apikey", `${process.env.REACT_APP_API_KEY}`);
 
 
@@ -24,7 +24,7 @@ export default function Paraphrase() {
       headers: myHeaders,
       body: raw
     };
-    
+
     await fetch("https://api.promptapi.com/paraphraser", requestOptions)
       .then(response => response.json())
       .then(result => setParatext(result.paraphrased))
@@ -33,14 +33,14 @@ export default function Paraphrase() {
   function showcopy() {
     setShow(true);
     setTimeout(() => {
-    setShow(false);
+      setShow(false);
     }, 2000);
   }
 
   return (
-    <div style={{backgroundColor:'white',minHeight:"100vh",paddingBottom:"20px"}}>
+    <div style={{ backgroundColor: 'white', minHeight: "100vh", paddingBottom: "20px" }}>
       <div id="paraheading">
-        <img src={logo} />
+        <img src={logo} alt="" />
         <h1>Paraphraser</h1>
       </div>
       <div id="parasolver">
@@ -61,9 +61,9 @@ export default function Paraphrase() {
           <div>
             <CopyToClipboard text={Paratext}
             >
-              <button onClick={showcopy} style={{padding:"5px 10px"}}><FontAwesomeIcon icon={faClone} /> Copy</button>
+              <button onClick={showcopy} style={{ padding: "5px 10px" }}><FontAwesomeIcon icon={faClone} /> Copy</button>
             </CopyToClipboard>
-            {Show&&<span style={{color:"white",backgroundColor:"#111",borderRadius:"3px",padding:"3px",marginLeft:"3px"}}>Copied!!</span>}
+            {Show && <span style={{ color: "white", backgroundColor: "#111", borderRadius: "3px", padding: "3px", marginLeft: "3px" }}>Copied!!</span>}
 
           </div>
         </div>
