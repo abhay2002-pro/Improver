@@ -13,7 +13,7 @@ class Home extends Component {
         <ParticlesBg type="circle" bg={true} />
         <div id="content">
         <h1>Improver</h1>
-        <p>This project is a resume template that can be used as the project home page or resume page.</p>
+        <p>Improving your writing one word at a time.</p>
         <a href="https://github.com/abhay2002-pro/Improver" id="repo"><FontAwesomeIcon icon={faGithub} /> Github</a>
         </div>
         

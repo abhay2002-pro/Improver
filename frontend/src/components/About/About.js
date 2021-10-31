@@ -10,9 +10,9 @@ import mail from "./icons/envelope-fill.svg";
 export default function About() {
     return (
         <div id="aboutpage">
-            <h2 className="size">About Us</h2>
-            <p className="text">
-                We are from IIIT Sricity pursuing Btech and currently in second year
+            <h2 className="size">About us</h2>
+            <p className="text_head">
+                We are team Poker Faces
             </p>
             <div className="rows">
                 <div className="card">
@@ -21,15 +21,15 @@ export default function About() {
                             <div className="nametag">Satyakiran</div>
                             <img src={satya} alt="" className="sizing" />
                             <div className="card-text">
-                                ML Engineer
+                                ML Enthusiast
                                 <br />
-                                Front-end developer
+                                HTML, CSS, Bootstrap, ReactJS
                                 <br />
-                                Familiar with HTML, CSS, Bootstrap, React.
-                                <br/>
+                                <br />
+                                CSE sophomore @ IIIT Sri City
                             </div>
                             <div className="mail">
-                                <img src={mail} alt="mailIcon" className="icon" /><br />
+                                <img src={mail} alt="mailIcon" className="icon" />
                                 <a href="mailto:satyakiran56@gmail.com" target="_blank">satyakiran56@gmail.com</a>
                             </div>
                         </div>
@@ -51,22 +51,23 @@ export default function About() {
                 </div>
                 <div className="card">
                     <div className="card-info">
-                        <div className="card-front">
+                        <div className="card-front" id="abhay">
                             <div className="nametag">Abhay Ray</div>
                             <img src={abhay} alt="" className="sizing" />
                             <div className="card-text">
                                 Front-end developer
                                 <br />
-                                Familiar with HTML, CSS, Bootstrap, React.
+                                CSS, Bootstrap, ReactJS, NodeJS
                                 <br />
-                                WebOps Engineer
+                                <br />
+                                CSE sophomore @ IIIT Sri City
                             </div>
                             <div className="mail">
-                                <img src={mail} alt="mailIcon" className="icon" /><br />
+                                <img src={mail} alt="mailIcon" className="icon" />
                                 <a href="mailto:abhay2002@gmail.com" target="_blank">abhayray2002@gmail.com</a>
                             </div>
                         </div>
-                        <div className="card-back">
+                        <div className="card-back" id = "abhay-back">
                             <div className="back-text">
                                 Social Handles
                             </div>
@@ -88,13 +89,15 @@ export default function About() {
                             <div className="nametag">Aritro Ghosh</div>
                             <img src={aritro} alt="" className="sizing" />
                             <div className="card-text">
-                                Mern developer
+                                Web developer
                                 <br />
-                                Familiar with HTML, CSS, Bootstrap,React , Node and Express.
+                                CSS, ReactJS, NodeJS, ExpressJS
                                 <br />
+                                <br />
+                                CSE sophomore @ IIIT Sri City
                             </div>
                             <div className="mail">
-                                <img src={mail} alt="mailIcon" className="icon" /><br />
+                                <img src={mail} alt="mailIcon" className="icon" />
                                 <a href="mailto:ghosharitro66@gmail.com" target="_blank">ghosharitro66@gmail.com</a>
                             </div>
                         </div>

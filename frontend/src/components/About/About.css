@@ -1,25 +1,34 @@
 #aboutpage{
-    font-family: "Times New Roman", Times, serif;
-    background-image: linear-gradient(90deg, white, grey);
+    font-family: "Helvetica", Times, serif;
+    /* background-image: linear-gradient(90deg, #fcde67, black); */
+    background-color: black;
     min-height: calc(100vh - 80px);
     padding-bottom: 50px;
   }
   
   .size {
-    height: 100%;
+    height: 5rem;
     width: 100%;
     background-color: tur;
-    background-image: linear-gradient(90deg, turquoise, grey);
+    background-color: black;
     text-align: center;
+    color: #ED3D32;
+    padding: 15px 15px;
+    font-size: 2.5rem;
   }
-  .text{
+
+  .text_head{
     text-align: justify;
-    font-size: 25px;
-    padding: 0 15px;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #888988;
   }
   .nametag{
     text-align: center;
     font-size: 25px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #271426;
   }
   .sizing{
     /* height: 170px; */
@@ -37,7 +46,6 @@
     margin-top: 50px;
     height: 400px;
     width: 26vw;
-    border: 1px solid #f1f1f1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     perspective: 1000px;
@@ -62,7 +70,7 @@
     width: 100%;
     height: 100%;
     align-items: center;
-    transition: 1s;
+    transition: 0.8s;
     transform-style: preserve-3d;
   }
   .card:hover .card-info {
@@ -77,26 +85,35 @@
     backface-visibility: hidden;
   }
   .card-front {
-    background-color: #bbb;
+    background-color: #75AB97;
     color: black;
+  }
+  #abhay{
+    background-color: #ED4439;
   }
   .card-text{
     font-size: 18px;
-    color: black;
+    color: #271426;
     font-weight: 400;
     margin-top: 10px;
     padding:0 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
   }
   .card-back {
     text-align: none;
-    background-color: grey;
-    color: white;
+    background-color: #75AB97;
+    color: #271426;
     transform: rotateY(180deg);
+  }
+  #abhay-back{
+    background-color: #ED4439;
   }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     height: 400px;
-    width: 25vw;
+    width: 26vw;
   }
   .rows {
     display: flex;
@@ -106,13 +123,13 @@
     margin-top: 10px;
     padding: 0 10px;
     font-size: 20px;
-    text-decoration: underline;
     font-style: italic;
     font-weight: 500;
     word-wrap: break-word;
     
   }
   .mail a{
+    text-decoration: none;
     color: #000;
   }
   .icon{
