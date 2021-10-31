@@ -392,12 +392,12 @@ export default function Summariser() {
   }
   return (
     <div style={{ backgroundColor: "white", minHeight: "100vh" }}>
-      <div id="gramaheading">
+      <div id="sumheading">
         <img src={logo} />
         <h1>Summariser</h1>
       </div>
-      <div id="gramasolver">
-        <div id="gramasolverlayout">
+      <div id="sumsolver">
+        <div id="sumsolverlayout">
           <div>
             <div>Original Text</div>
             <textarea

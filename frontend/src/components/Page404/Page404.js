@@ -11,7 +11,7 @@ export default function Page404() {
             You’re either misspelling the URL <br /> or requesting a page that's no longer here.
         </p>
         <div align="center">
-            <a className="btn-back" href="#">Go to Home page</a>
+            <a className="btn-back" href="/">Go to Home page</a>
         </div>
         <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" />
         <img src="https://assets.codepen.io/1538474/spaceship.svg" className="spaceship" /></div>

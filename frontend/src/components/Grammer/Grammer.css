@@ -2,7 +2,7 @@
 {
     width:300px;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -15,13 +15,13 @@
 }
 #gramaheading h1{
 }
-#gramasolverlayout div:nth-child(1) div,#gramasolverlayout div:nth-child(2) div{
+#gramasolverlayout div:nth-child(1) div,#gramasolverlayout div:nth-child(2) div,#gramasolverlayout div:nth-child(3) div{
     width: 200px;
     position: relative;
     left:calc(50% - 100px);
     text-align: center;
     transform: translate(0%,50%);
-    z-index: 5;
+    /* z-index: 5; */
     background-color: aqua;
     /* top:50px; */
 }
@@ -55,7 +55,7 @@
     padding: 12px;
     overflow: auto;
 }
-#gramasolverlayout div:nth-child(2) textarea
+#gramasolverlayout div:nth-child(2) section,#gramasolverlayout div:nth-child(3) textarea
 {
     height: 200px;
     min-height: 200px;

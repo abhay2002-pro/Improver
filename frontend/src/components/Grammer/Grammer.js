@@ -6,6 +6,7 @@ import axios from 'axios';
 export default function Grammer() {
   const [Test, setTest] = useState("");
   const [Sugtext, setSugtext] = useState("");
+  var [err, seterr] = useState([]);
 
   async function checker() {
 
@@ -18,32 +19,40 @@ export default function Grammer() {
       },
     };
     const res = await axios(options);
-    console.log(res.data);
-    var newdata="";
-    res.data.map(
-      (ele,index)=>{
-        newdata+=`${index+1}. ${ele.reason}\n`;
-      }
-    );
+    // console.log(res.data);
+    // console.log(res.data.length)
+    console.log(err);
+    var newdata = "";
+    const err_pairs = new Map();
+    if (res.data.length != 0) {
+      var pointer = 0;
+      res.data.map(
+        (ele, index) => {
+          var dummy1 = Test.slice(pointer, ele.index);
+          var dummy2 = Test.slice(ele.index, ele.index + ele.offset);
+          err_pairs.set(dummy1, 0);
+          err_pairs.set(dummy2, 1);
+          pointer = ele.index + ele.offset;
+          newdata += `${index + 1}. ${ele.reason}\n`;
+        }
+      );
+      var dummy3 = Test.slice(pointer, Test.length);
+      err_pairs.set(dummy3, 0);
 
+
+
+    }
+    else {
+      newdata = "No Suggestions.";
+      // seterr("No err");
+    }
+    const result = Array.from(err_pairs).map(([name, value]) => ({ name, value }))
+    console.log(result);
     setSugtext(newdata);
-    // fetch('http://localhost:4000/check', {
-    //   method: 'POST', // or 'PUT'
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: Test,
-    // })
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     console.log('Success:', data);
-    //   })
-    //   .catch((error) => {
-    //     console.error('Error:', error);
-    //   });
+    seterr(result);
   }
   return (
-    <div style={{backgroundColor:'white',minHeight:"100vh"}}>
+    <div style={{ backgroundColor: 'white', minHeight: "100vh" }}>
       <div id="gramaheading">
         <img src={logo} />
         <h1>Grammer</h1>
@@ -56,6 +65,23 @@ export default function Grammer() {
             </textarea>
 
             <button onClick={checker}>Grammer</button>
+
+          </div>
+          <div>
+            <div>Errors</div>
+            <section>
+              {err.map((el) => {
+                let value = el.value;
+                console.log(el);
+                if (value == 0) {
+                  return (<span>{`${el.name}`}</span>);
+                }
+                else {
+                  return (<span style={{ backgroundColor: "yellow" }}>{`${el.name}`}</span>)
+                }
+              })}
+              {/* {Test} */}
+            </section>
 
           </div>
           <div>

@@ -2,7 +2,7 @@
 {
     width:300px;
     margin: auto;
-    Padding-top: 60px;
+    Padding-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -21,7 +21,7 @@
     left:calc(50% - 100px);
     text-align: center;
     transform: translate(0%,50%);
-    z-index: 5;
+    /* z-index: 5; */
     background-color: aqua;
     /* top:50px; */
 }
