@@ -423,7 +423,7 @@ export default function Summariser() {
           <div>
             <CopyToClipboard text={Sugtext}
             >
-              <button onClick={showcopy} style={{ padding: "5px 10px", marginLeft: "12vw", marginTop: "10px" }}><FontAwesomeIcon icon={faClone} /> Copy</button>
+              <button onClick={showcopy} style={{ padding: "5px 10px", marginLeft: "10vw", marginTop: "10px" }}><FontAwesomeIcon icon={faClone} /> Copy</button>
             </CopyToClipboard>
             {Show && <span style={{ color: "white", backgroundColor: "#111", borderRadius: "3px", padding: "3px", marginLeft: "3px" }}>Copied!!</span>}
 
