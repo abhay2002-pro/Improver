@@ -3,6 +3,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------
 
+
 ## Table of Contents:
 **1. Description**
 **2. Demo Link**
@@ -27,13 +28,21 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 ## How to Use 
-**Pharahaser : Paste the text to be paraphraserised in the text area. Click on "Paraphrase" button and copy your paraphraserised text.** 
+
+**Click on this link - https://improver.netlify.app/ and explore different sections**
+
+**Pharahaser : Paste the text to be paraphraserised in the text area. Click on "Paraphrase" button and wait for <10 secs and copy your paraphraserised text.** 
 
 **Summariser : Paste the text to be summarised in the text area (the text should be atleast five sentences). Click on "Summarise" button and copy your summarised text.** 
 
-**Grammer : Paste the text to be checked in the text area. Click on "Check" button and check the suggestions and errors.** 
+**Grammer : Paste the text to be checked in the text area. Click on "Check" button and wait for <10 secs then check the suggestions and errors.** 
 
 ----------------------------------------------------------------------------------------------------------------------------
+
+# Team Name
+**Poker Faces**
+
+-----------------------------------------------------------------------------------------------------------------------
 
 ## Contributors
 1. Abhay Kumar Ray
