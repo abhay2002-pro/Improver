@@ -88,7 +88,7 @@ export default function About() {
                             <div className="nametag">Aritro Ghosh</div>
                             <img src={aritro} alt="" className="sizing" />
                             <div className="card-text">
-                                Front-end and Backend developer
+                                Mern developer
                                 <br />
                                 Familiar with HTML, CSS, Bootstrap,React , Node and Express.
                                 <br />

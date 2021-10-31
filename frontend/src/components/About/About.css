@@ -44,16 +44,17 @@
     animation: henlo;
     animation-iteration-count: initial;
     animation-duration: 1s;
+    animation-timing-function: linear;
   }
   
   @keyframes henlo {
     0% {
       margin-left: 120px;
-      margin-top: 25px;
+      opacity:0;
     }
     100% {
-      margin-left: 120px;
-      margin-top: 50px;
+      margin-left: 0px;
+      opacity:1;
     }
   }
   .card-info {
