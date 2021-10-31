@@ -1,5 +1,5 @@
 # Improver
-**This is an ENGLISH WEBSITE .**
+**Improver is a one stop solution for all your english writing needs. It not only provides paraphrasing tool but also helps you to correct grammatical errors and write summary of large text**
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -11,10 +11,6 @@
 **4. How to use**
 
 ------------------------------------------------------------------------------------------------------------------------
-## Description
-
-
----------------------------------------------------------------------------------------------------------------------------
 
 ## Link of the Project
 **Website Link :- https://improver.netlify.app/**
