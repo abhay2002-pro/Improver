@@ -1,11 +1,22 @@
 import React, { useState } from "react";
 import logo from "./summarize-icon-9.jpg";
 import "./Summariser.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClone } from '@fortawesome/free-solid-svg-icons';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 export default function Summariser() {
   const [Test, setTest] = useState("");
   const [Sugtext, setSugtext] = useState("");
+  const [Show,setShow]=useState(false);
+
+  function showcopy() {
+    setShow(true);
+    setTimeout(() => {
+    setShow(false);
+    }, 2000);
+  }
 
   function checker(value) {
     var text = value;
@@ -407,7 +418,15 @@ export default function Summariser() {
           </div>
           <div>
             <div>Summarised text</div>
-            <textarea disabled={true} value={Sugtext}></textarea>
+            <textarea disabled={true} value={Sugtext} placeholder={"Enter atleast five sentences"}></textarea>
+          </div>
+          <div>
+            <CopyToClipboard text={Sugtext}
+            >
+              <button onClick={showcopy} style={{padding:"5px 10px"}}><FontAwesomeIcon icon={faClone} /> Copy</button>
+            </CopyToClipboard>
+            {Show&&<span style={{color:"white",backgroundColor:"#111",borderRadius:"3px",padding:"3px",marginLeft:"3px"}}>Copied!!</span>}
+
           </div>
         </div>
       </div>
