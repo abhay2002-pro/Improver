@@ -30,7 +30,7 @@ export default function About() {
                             </div>
                             <div className="mail">
                                 <img src={mail} alt="mailIcon" className="icon" />
-                                <a href="mailto:satyakiran56@gmail.com" target="_blank">satyakiran56@gmail.com</a>
+                                <a href="mailto:satyakiran56@gmail.com" target="_blank" rel="noreferrer">satyakiran56@gmail.com</a>
                             </div>
                         </div>
                         <div className="card-back">
@@ -38,13 +38,13 @@ export default function About() {
                                 Social Handles
                             </div>
                             <div className="back-">
-                                <a href="https://github.com/galaxey56" target="_blank"><img src={github} alt="github" className="back-icon" /></a>
+                                <a href="https://github.com/galaxey56" target="_blank" rel="noreferrer"><img src={github} alt="github" className="back-icon" /></a>
                             </div>
                             <div className="back-">
-                                <a href="https://www.linkedin.com/in/satya-venkata-kiran-patnala-1321aa202/" target="_blank"><img src={linkedin} alt="linkedin" className="back-icon" /></a>
+                                <a href="https://www.linkedin.com/in/satya-venkata-kiran-patnala-1321aa202/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin" className="back-icon" /></a>
                             </div>
                             <div className="back-">
-                                <a href="mailto:satyakiran56@gmail.com" target="_blank"><img src={mail} alt="mail" className="back-icon" /></a>
+                                <a href="mailto:satyakiran56@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="mail" rel="noreferrer" className="back-icon" /></a>
                             </div>
                         </div>
                     </div>
@@ -64,21 +64,21 @@ export default function About() {
                             </div>
                             <div className="mail">
                                 <img src={mail} alt="mailIcon" className="icon" />
-                                <a href="mailto:abhay2002@gmail.com" target="_blank">abhayray2002@gmail.com</a>
+                                <a href="mailto:abhay2002@gmail.com" target="_blank" rel="noreferrer">abhayray2002@gmail.com</a>
                             </div>
                         </div>
-                        <div className="card-back" id = "abhay-back">
+                        <div className="card-back" id="abhay-back">
                             <div className="back-text">
                                 Social Handles
                             </div>
                             <div className="back-">
-                                <a href="https://github.com/abhay2002-pro" target="_blank"><img src={github} alt="github" className="back-icon" /></a>
+                                <a href="https://github.com/abhay2002-pro" target="_blank" rel="noreferrer"><img src={github} alt="github" className="back-icon" /></a>
                             </div>
                             <div className="back-">
-                                <a href="https://www.linkedin.com/in/abhay-ray-204b44187/" target="_blank"><img src={linkedin} alt="linkedin" className="back-icon" /></a>
+                                <a href="https://www.linkedin.com/in/abhay-ray-204b44187/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" className="back-icon" /></a>
                             </div>
                             <div className="back-">
-                                <a href="mailto:abhay2002@gmail.com" target="_blank"><img src={mail} alt="mail" className="back-icon" /></a>
+                                <a href="mailto:abhay2002@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="mail" className="back-icon" /></a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function About() {
                             </div>
                             <div className="mail">
                                 <img src={mail} alt="mailIcon" className="icon" />
-                                <a href="mailto:ghosharitro66@gmail.com" target="_blank">ghosharitro66@gmail.com</a>
+                                <a href="mailto:ghosharitro66@gmail.com" target="_blank" rel="noreferrer">ghosharitro66@gmail.com</a>
                             </div>
                         </div>
                         <div className="card-back">
@@ -106,13 +106,13 @@ export default function About() {
                                 Social Handles
                             </div>
                             <div className="back-">
-                                <a href="https://github.com/aritro66" target="_blank"><img src={github} alt="github" className="back-icon" /></a>
+                                <a href="https://github.com/aritro66" target="_blank" rel="noreferrer"><img src={github} alt="github" className="back-icon" /></a>
                             </div>
                             <div className="back-">
-                                <a href="https://www.linkedin.com/in/aritro-ghosh-9394651bb/" target="_blank"><img src={linkedin} alt="linkedin" className="back-icon" /></a>
+                                <a href="https://www.linkedin.com/in/aritro-ghosh-9394651bb/" rel="noreferrer" target="_blank"><img src={linkedin} alt="linkedin" className="back-icon" /></a>
                             </div>
                             <div className="back-">
-                                <a href="mailto:ghosharitro66@gmail.com" target="_blank"><img src={mail} alt="mail" className="back-icon" /></a>
+                                <a href="mailto:ghosharitro66@gmail.com" target="_blank" rel="noreferrer"><img src={mail} alt="mail" className="back-icon" /></a>
                             </div>
                         </div>
                     </div>

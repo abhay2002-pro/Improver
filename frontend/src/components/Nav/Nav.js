@@ -1,9 +1,6 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import menu from './menu.jpg';
-import close from './close.jpeg';
-import {useRouteMatch} from 'react-router-dom';
 
 function Nav() {
   const [click, setClick] = useState(false);
