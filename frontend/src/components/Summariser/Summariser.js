@@ -9,12 +9,12 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 export default function Summariser() {
   const [Test, setTest] = useState("");
   const [Sugtext, setSugtext] = useState("");
-  const [Show,setShow]=useState(false);
+  const [Show, setShow] = useState(false);
 
   function showcopy() {
     setShow(true);
     setTimeout(() => {
-    setShow(false);
+      setShow(false);
     }, 2000);
   }
 
@@ -423,9 +423,9 @@ export default function Summariser() {
           <div>
             <CopyToClipboard text={Sugtext}
             >
-              <button onClick={showcopy} style={{padding:"5px 10px"}}><FontAwesomeIcon icon={faClone} /> Copy</button>
+              <button onClick={showcopy} style={{ padding: "5px 10px", marginLeft: "12vw", marginTop: "10px" }}><FontAwesomeIcon icon={faClone} /> Copy</button>
             </CopyToClipboard>
-            {Show&&<span style={{color:"white",backgroundColor:"#111",borderRadius:"3px",padding:"3px",marginLeft:"3px"}}>Copied!!</span>}
+            {Show && <span style={{ color: "white", backgroundColor: "#111", borderRadius: "3px", padding: "3px", marginLeft: "3px" }}>Copied!!</span>}
 
           </div>
         </div>
