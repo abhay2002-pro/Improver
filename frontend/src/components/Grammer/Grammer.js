@@ -65,7 +65,7 @@ export default function Grammer() {
             <textarea value={Test} onChange={(e) => setTest(e.target.value)}>
             </textarea>
 
-            <button onClick={checker}>Grammer</button>
+            <button onClick={checker}>Check</button>
 
           </div>
           <div>
