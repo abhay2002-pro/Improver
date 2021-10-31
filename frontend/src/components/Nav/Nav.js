@@ -29,7 +29,7 @@ function Nav() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/paraphraser"
+                to="/paraphrase"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
